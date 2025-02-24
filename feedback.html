@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góp ý - Phản hồi khách hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 150px;
+            /* ✅ Làm khung nhập dài hơn */
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./Images/Apple-logo.webp" alt="Logo">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li class="dropdown">
+                <a href="#">Sản phẩm</a>
+                <ul class="dropdown-content">
+                    <li><a href="iphone.html">Iphone Series</a></li>
+                    <li><a href="airpods.html">AirPods</a></li>
+                    <li><a href="phukien.html">Phụ Kiện</a></li>
+
+                </ul>
+            </li>
+
+            <li><a href="feedback.html">Góp ý</a></li>
+            <div class="login">
+                <a href="dangnhap.html" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a>
+            </div>
+        </ul>
+        <div class="search-cart">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="cart-icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    </header>
+    <div class="container">
+        <h1>📝 Góp ý - Phản hồi khách hàng</h1>
+        <p>Hãy để lại phản hồi của bạn, chúng tôi luôn sẵn sàng lắng nghe!</p>
+
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nội dung phản hồi:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">📩 Gửi phản hồi</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© Bản quyền thuộc về Triệu Vĩ & Quang Hiền</p>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

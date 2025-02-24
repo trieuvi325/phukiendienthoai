@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Căn Giữa</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ẩn danh sách sản phẩm ban đầu */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./Images/Apple-logo.webp" alt="Logo">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li class="dropdown">
+                <a href="#">Sản phẩm</a>
+                <ul class="dropdown-content">
+                    <li><a href="iphone.html">Iphone Series</a></li>
+                    <li><a href="airpods.html">Tai nghe</a></li>
+                    <li><a href="phukien.html">Phụ Kiện</a></li>
+                </ul>
+            </li>
+            <li><a href="feedback.html">Góp ý</a></li>
+            <div class="login">
+                <a href="dangnhap.html" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a>
+            </div>
+        </ul>
+        <div class="search-cart">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="cart-icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    </header>
+
+    <!-- PHẦN HÌNH NỀN -->
+    <div class="hero">
+        <img src="./Images/ip15.webp" alt="Hero Image">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Sản Phẩm Apple <br> Chính hãng, Chất lượng, Uy tín.</h2>
+            <button onclick="scrollToProducts()">Xem ngay</button>
+        </div>
+    </div>
+
+    <!-- DANH MỤC SẢN PHẨM -->
+    <section id="product-list">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-container">
+            <div class="product featured">
+                <div class="badge">Trả chậm 0%</div>
+                <img src="/Asignment2/Images/iphone-16-pro-max-sa-mac-thumb-600x600.jpg" alt="iPhone 16 Pro Max">
+                <h3>iPhone 16 Pro Max </h3>
+                <p class="display">
+                    <span>Super Retina XDR</span>
+                    <span>6.3"</span>
+                </p>
+                <div class="storage-options">
+                    <span class="selected">256GB</span>
+                    <span>512GB</span>
+                    <span>1TB</span>
+                </div>
+                <div class="price-container">
+                    <p class="discounted-price">32.890.000đ</p>
+                    <p class="original-price">34.990.000đ</p>
+                    <p class="discount">-6%</p>
+                </div>
+                <p class="bonus">Quà 500.000đ</p>
+                <ul class="specifications">
+                    <li>Chip Apple A18 Pro 6 nhân</li>
+                    <li>RAM: 8 GB</li>
+                    <li>Dung lượng: 256 GB</li>
+                    <li>Camera sau: Chính 48 MP & Phụ 48 MP, 12 MP</li>
+                    <li>Camera trước: 12 MP</li>
+                    <li>Pin 33 giờ, Sạc 20W</li>
+                </ul>
+                <p class="rating">⭐ 4.9 • Đã bán 94,5k</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product-container">
+                <div class="product featured">
+                    <div class="badge">Trả chậm 0%</div>
+                    <img src="/Asignment2/Images/iphone-16-pro-titan-tu-nhien.png" alt="iPhone 16 Pro">
+                    <h3>iPhone 16 Pro </h3>
+                    <p class="display">
+                        <span>Super Retina XDR</span>
+                        <span>6.3"</span>
+                    </p>
+                    <div class="storage-options">
+                        <span class="selected">128GB</span>
+                        <span>256GB</span>
+                        <span>512GB</span>
+                    </div>
+                    <div class="price-container">
+                        <p class="discounted-price">27.590.000đ</p>
+                        <p class="original-price">28.990.000đ</p>
+                        <p class="discount">-6%</p>
+                    </div>
+                    <p class="bonus">Quà 500.000đ</p>
+                    <ul class="specifications">
+                        <li>Chip Apple A18 Pro 6 nhân</li>
+                        <li>RAM: 8 GB</li>
+                        <li>Dung lượng: 128 GB</li>
+                        <li>Camera sau: Chính 48 MP & Phụ 48 MP, 12 MP</li>
+                        <li>Camera trước: 12 MP</li>
+                        <li>Pin 27 giờ, Sạc 20W</li>
+                    </ul>
+                    <p class="rating">⭐ 4.9 • Đã bán 94,5k</p>
+                    <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-container">
+                    <div class="product featured">
+                        <div class="badge">Trả chậm 0%</div>
+                        <img src="/Asignment2/Images/iphone-16-plus-hong-thumb-600x600.jpg" alt="iPhone 16 Plus">
+                        <h3>iPhone 16 Plus</h3>
+                        <p class="display">
+                            <span>Super Retina XDR</span>
+                            <span>6.3"</span>
+                        </p>
+                        <div class="storage-options">
+                            <span class="selected">125GB</span>
+                            <span>256GB</span>
+                            <span>512GB</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="discounted-price">24.790.000đ</p>
+                            <p class="original-price">25.990.000đ</p>
+                            <p class="discount">-4%</p>
+                        </div>
+                        <p class="bonus">Quà 500.000đ</p>
+                        <ul class="specifications">
+                            <li>Chip Apple A18 6 nhân</li>
+                            <li>RAM: 8 GB</li>
+                            <li>Dung lượng: 128 GB</li>
+                            <li>Camera sau: Chính 48 MP & Phụ 12 MP</li>
+                            <li>Camera trước: 12 MP</li>
+                            <li>Pin 27 giờ, Sạc 20W</li>
+                        </ul>
+                        <p class="rating">⭐ 4.9 • Đã bán 94,5k</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-container">
+                        <div class="product featured">
+                            <div class="badge">Trả chậm 0%</div>
+                            <img src="/Asignment2/Images/iphone-16-blue-600x600.png" alt="iPhone 16e">
+                            <h3>iPhone 16 </h3>
+                            <p class="display">
+                                <span>Super Retina XDR</span>
+                                <span>6.3"</span>
+                            </p>
+                            <div class="storage-options">
+                                <span class="selected">128GB</span>
+                                <span>256GB</span>
+                                <span>512GB</span>
+                            </div>
+                            <div class="price-container">
+                                <p class="discounted-price">21.490.000đ</p>
+                                <p class="original-price">22.990.000đ</p>
+                                <p class="discount">-6%</p>
+                            </div>
+                            <p class="bonus">Quà 500.000đ</p>
+                            <ul class="specifications">
+                                <li>Chip Apple A18 6 nhân</li>
+                                <li>RAM: 8GB</li>
+                                <li>Dung lượng: 128 GB</li>
+                                <li>Camera sau: Chính 48 MP & Phụ 12 MP</li>
+                                <li>Camera trước: 12 MP</li>
+                                <li>Pin 22 giờ, Sạc 20W</li>
+                            </ul>
+                            <p class="rating">⭐ 4.9 • Đã bán 94,5k</p>
+                            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                        </div>
+    </section>
+
+    <section id="product-two">
+        <h2>Gợi ý cho bạn</h2>
+        <div class="product-container">
+            <div class="product featured">
+                <div class="badge">Trả chậm 0%</div>
+                <img src="/Asignment2/Images/adapter-sac-type-c-20w-cho-iphone-ipad-apple-mhje3-avatar-1-1-600x600.jpg"
+                    alt="Adapter sạc Apple USB-C 20W">
+                <h3>Adapter sạc Apple USB-C 20W</h3>
+                <p class="display">
+                    <span>Sạc Nhanh 20W</span>
+                    <span>20W</span>
+                </p>
+                <div class="price-container">
+                    <p class="discounted-price">550.000đ</p>
+                </div>
+                <p class="bonus">Quà 100.000đ</p>
+                <ul class="specifications">
+                    <li>Đầu vào: Type C</li>
+                    <li>Đầu ra: Type C 20W</li>
+                    <li>Dòng sạc tối đa: 20 W</li>
+                    <li>Tiện ích: Power Delivery</li>
+                </ul>
+                <p class="rating">⭐ 4.9 • Đã bán 549,5k</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="product-container">
+                <div class="product featured">
+                    <div class="badge">Trả chậm 0%</div>
+                    <img src="/Asignment2/Images/iphone-16-pro-max-sa-mac-thumb-600x600.jpg" alt="iPhone 16 Pro Max">
+                    <h3>iPhone 16 Pro Max </h3>
+                    <p class="display">
+                        <span>Super Retina XDR</span>
+                        <span>6.3"</span>
+                    </p>
+                    <div class="storage-options">
+                        <span class="selected">256GB</span>
+                        <span>512GB</span>
+                        <span>1TB</span>
+                    </div>
+                    <div class="price-container">
+                        <p class="discounted-price">32.890.000đ</p>
+                        <p class="original-price">34.990.000đ</p>
+                        <p class="discount">-6%</p>
+                    </div>
+                    <p class="bonus">Quà 500.000đ</p>
+                    <ul class="specifications">
+                        <li>Chip Apple A18 Pro 6 nhân</li>
+                        <li>RAM: 8 GB</li>
+                        <li>Dung lượng: 256 GB</li>
+                        <li>Camera sau: Chính 48 MP & Phụ 48 MP, 12 MP</li>
+                        <li>Camera trước: 12 MP</li>
+                        <li>Pin 33 giờ, Sạc 20W</li>
+                    </ul>
+                    <p class="rating">⭐ 4.9 • Đã bán 94,5k</p>
+                    <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-container">
+                    <div class="product featured">
+                        <div class="badge">Trả chậm 0%</div>
+                        <img src="/Asignment2/Images/iphone-15-pro-max-black-thumbnew-600x600.jpg"
+                            alt="iPhone 15 Pro Max 256GB">
+                        <h3>iPhone 15 Pro Max 256GB </h3>
+                        <p class="display">
+                            <span>Super Retina XDR</span>
+                            <span>6.7"</span>
+                        </p>
+                        <div class="storage-options">
+                            <span class="selected">256GB</span>
+                            <span>512GB</span>
+                            <span>1TB</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="discounted-price">29.990.000đ</p>
+                            <p class="original-price">30.990.000đ</p>
+                            <p class="discount">-3%</p>
+                        </div>
+                        <p class="bonus">Quà 500.000đ</p>
+                        <ul class="specifications">
+                            <li>Chip Apple A17 Pro 6 nhân</li>
+                            <li>RAM: 8 GB</li>
+                            <li>Dung lượng: 256 GB</li>
+                            <li>Camera sau: Chính 48 MP & Phụ 12 MP, 12 MP</li>
+                            <li>Camera trước: 12 MP</li>
+                            <li>Pin 4422 mAh, Sạc 20W</li>
+                        </ul>
+                        <p class="rating">⭐ 4.9 • Đã bán 240,2k</p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-container">
+                        <div class="product-container">
+                            <div class="product featured">
+                                <div class="badge">Trả chậm 0%</div>
+                                <img src="/Asignment2/Images/tai-nghe-bluetooth-airpods-pro-2nd-gen-usb-c-charge-apple-thumb-1-600x600.jpg"
+                                    alt="AirPods Pro Gen 2">
+                                <h3>AirPods Pro Gen 2</h3>
+
+
+                                <div class="price-container">
+                                    <p class="discounted-price">5.790.000đ</p>
+                                    <p class="original-price">6.200.000đ</p>
+                                    <p class="discount">-6%</p>
+                                </div>
+                                <p class="bonus">Quà 200.000đ</p>
+                                <ul class="specifications">
+                                    <li>Pin tai nghe: Dùng 6 giờ</li>
+                                    <li>Pin hộp sạc: Dùng 30 giờ </li>
+                                    <li>Cổng sạc: Sạc MagSafe, Type-C</li>
+                                    <li>Công nghệ âm thanh: Active Noise. Cancellation. Chip Apple H2. Adaptive EQ.
+                                        Ambient Sound</li>
+                                    <li>Tiện ích:
+                                        Sạc không dây, Trợ lý ảo Siri, Chống nước & bụi IP54Có, mic thoại, Sạc nhanh,
+                                        Chống ồn chủ động
+                                        ANC</li>
+                                    <li>Bluetooth 5.3</li>
+                                </ul>
+                                <p class="rating">⭐ 4.9 • Đã bán 19,5k</p>
+                                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                            </div>
+    </section>
+
+    <!-- DANH MỤC SẢN PHẨM MỚI (Ẩn ban đầu) -->
+    <section id="sanphammoi" class="hidden">
+        <h2>Sản phẩm mới</h2>
+        <div class="product-container">
+            <div class="product">
+                <h3>Sản phẩm A</h3>
+                <p>Mô tả sản phẩm A</p>
+                <img src="./Images/sp_moi_1.webp" alt="Sản phẩm A">
+            </div>
+            <div class="product">
+                <h3>Sản phẩm B</h3>
+                <p>Mô tả sản phẩm B</p>
+                <img src="./Images/sp_moi_2.webp" alt="Sản phẩm B">
+            </div>
+        </div>
+    </section>
+
+    <!-- DANH MỤC SẢN PHẨM KHUYẾN MÃI (Ẩn ban đầu) -->
+    <section id="sanphamkhuyenmai" class="hidden">
+        <h2>Sản phẩm khuyến mãi</h2>
+        <div class="product-container">
+            <div class="product">
+                <h3>Sản phẩm X</h3>
+                <p>Mô tả sản phẩm X</p>
+                <img src="./Images/sp_km_1.webp" alt="Sản phẩm X">
+            </div>
+            <div class="product">
+                <h3>Sản phẩm Y</h3>
+                <p>Mô tả sản phẩm Y</p>
+                <img src="./Images/sp_km_2.webp" alt="Sản phẩm Y">
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        function scrollToProducts() {
+            document.getElementById("product-list").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function showProducts(category) {
+            // Ẩn tất cả danh mục sản phẩm
+            document.getElementById("sanphammoi").classList.add("hidden");
+            document.getElementById("sanphamkhuyenmai").classList.add("hidden");
+
+            // Hiển thị danh mục sản phẩm được chọn
+            document.getElementById(category).classList.remove("hidden");
+
+            // Cuộn xuống phần sản phẩm vừa hiển thị
+            document.getElementById(category).scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            const storageOptions = document.querySelectorAll('.storage-options span');
+
+            storageOptions.forEach(option => {
+                option.addEventListener('click', function () {
+                    // Remove selected class from all options
+                    storageOptions.forEach(opt => opt.classList.remove('selected'));
+
+                    // Add selected class to clicked option
+                    this.classList.add('selected');
+                });
+            });
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© Bản quyền thuộc về Triệu Vĩ & Quang Hiền</p>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
